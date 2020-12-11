@@ -1,0 +1,197 @@
+body {
+    overflow-x: hidden;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0 , 1)), url(uhy.jpg);
+    background-size: cover;
+    background-attachment: fixed; 
+}
+/* navbar */
+
+.navbar .container .navbar-nav .nav-link {
+    margin-right: 50px;
+    color: #ffffff;
+    transition: .3s;
+}
+
+.navbar .container .navbar-nav .nav-link:hover {
+    color: #3a3130;
+}
+
+/* jumbotron */
+
+.jumbotron {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0 , 1)), url(uhy.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    margin: 0;
+}
+
+.jumbotron .container {
+    margin-top: 100px;
+}
+
+.jumbotron h1{
+    font-size: 70px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* ABOUT */
+.about{
+    /* background: url(cika.jpg);
+    background-size: cover;
+    background-attachment: fixed;  */
+    margin-bottom: auto;
+    margin: 70px 0;
+    padding: 50px 0;
+    color: rgb(226, 224, 224);
+}
+.about .col-md-12 h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+    margin:50px 0;
+}
+
+.about .col-md-12 p{
+    text-align: center;
+}
+
+.about .col-md-12 h4{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    margin:50px 0;
+}
+
+/* MENU */
+.menu {
+    /* background: url(ciki.jpg);
+    background-size: cover;
+    background-attachment: fixed;  */
+    font-weight: 500;
+    margin: 0;
+    color: #d6d1d0;
+}
+.menu .container .row .col-md-12 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.menu .row:nth-child(2){
+    margin-left: 50px;
+}
+.row {
+    margin-top: 100px;
+    color: #d6d1d0;
+}
+.row:after {
+    content:'';
+    display: block;
+    clear: both;
+}
+.row .col-md-3 {
+    width:25%;
+    padding:20px;
+    box-sizing: border-box;
+    text-align: center;
+    float: left;
+}
+.icon {
+    width:70px;
+    height:70px;
+    border:1px solid;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 30px;
+    margin:0 auto;
+}
+.row .col-md-3 h4{
+    margin:10px 0;
+}
+
+/* contact */
+.cabang {
+    margin: 40px;
+    padding: 50px 0;
+    color: #ffffff;
+    font-family: sans-serif;
+}
+.cabang .row:first-child h3, .col-md-3 {
+    margin-top: -100px;
+    margin-bottom: -50px;
+}
+.cabang .col-md-3 {
+    color: #ffffff;
+}
+
+/* coffee */
+.label {
+    margin: 50px;
+    padding: 50px 0;
+    color: #ffffff;
+}
+.table {
+    color: #ffffff;
+}
+
+/*loader */
+.bg-loader {
+    background-color: #eee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-loader .loader{
+    width:100px;
+    height: 100px;
+    border:3px solid #ffffff;
+    border-radius: 50%;
+    border-top-color: #3a3130;
+    border-right-color: #3a3130;
+    border-bottom-color: #3a3130;
+    animation: puterin .5s linear infinite;
+}
+@keyframes puterin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    padding: 50px;
+    right: 50px;
+    width: 300px;
+    margin: 30px auto;
+    color: #ffffff;
+}
+@media screen and (max-width: 576px){
+    .navbar-brand {
+        text-align: center;
+        float: none;
+    }
+    .jumbotron {
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    .jumbotron .container {
+        margin-top: 20px;
+    }
+    .display-4 {
+        font-size: 24px !important;
+    }
+    .lead mt-5 mb-2 {
+        font-size: 18px !important;
+    }
+}
